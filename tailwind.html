@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="bg-blue-700 p-4">
+        <ul class="flex justify-center">
+            <li class="mx-4">
+                <a href="index.html" class="text-white hover:underline">Startsida</a>
+            </li>
+            <li class="mx-4">
+                <a href="bootstrap.html" class="text-white hover:underline">Bootstrap</a>
+            </li>
+            <li class="mx-4">
+                <a href="tailwind.html" class="text-white hover:underline">Tailwind</a>
+            </li>
+        </ul>
+    </nav>
+    <h1>Tailwind</h1>
+    <p>Den här sidan använder Tailwind</p>
+    <table class="bg-gray-300 min-w-full">
+        <tr>
+            <th class="py-2 px-4 border-b ">Djur</th>
+            <th class="py-2 px-4 border-b">Namn</th>
+            <th class="py-2 px-4 border-b">Grupp</th>
+            <th class="py-2 px-4 border-b">Typ</th>
+            <th class="py-2 px-4 border-b">Ålder</th>
+        </tr>
+        <tr class="bg-gray-100">
+            <td class="border py-2 px-4 text-center">Hund</td>
+            <td class="border py-2 px-4 text-center">Fritz</td>
+            <td class="border py-2 px-4 text-center">Hundrarna</td>
+            <td class="border py-2 px-4 text-center">Golden retriever</td>
+            <td class="border py-2 px-4 text-center">5</td>
+        </tr>
+        <tr>
+            <td class="border py-2 px-4 text-center">Katt</td>
+            <td class="border py-2 px-4 text-center">Bertil</td>
+            <td class="border py-2 px-4 text-center">Kattaklysorna</td>
+            <td class="border py-2 px-4 text-center">Vanlig huskatt</td>
+            <td class="border py-2 px-4 text-center">12</td>
+        </tr>
+        <tr class="bg-gray-100">
+            <td class="border py-2 px-4 text-center">Fågel</td>
+            <td class="border py-2 px-4 text-center">Folke</td>
+            <td class="border py-2 px-4 text-center">Undulätterna</td>
+            <td class="border py-2 px-4 text-center">Undulat</td>
+            <td class="border py-2 px-4 text-center">35</td>
+        </tr>
+        <tr>
+            <td class="border py-2 px-4 text-center">Orm</td>
+            <td class="border py-2 px-4 text-center">Werstin</td>
+            <td class="border py-2 px-4 text-center">Ormar</td>
+            <td class="border py-2 px-4 text-center">Snok</td>
+            <td class="border py-2 px-4 text-center">2</td>
+        </tr>
+        <tr class="bg-gray-100">
+            <td class="border py-2 px-4 text-center">Hamster</td>
+            <td class="border py-2 px-4 text-center">Kerstin</td>
+            <td class="border py-2 px-4 text-center">Hamsterpajas</td>
+            <td class="border py-2 px-4 text-center">Guldhamster</td>
+            <td class="border py-2 px-4 text-center">9</td>
+        </tr>
+    </table>
+    <form action="" class="space-y-4 p-6 border rounded-lg shadow-lg">
+        <legend class="text-2xl font-semibold mb-4">Lägg till djur</legend>
+            <label for="animal" class="block text-sm font-medium text-gray-700">Djur:</label>
+            <input type="text" id="animal" class="mt-1 border-2 border-gray-400 p-2 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+            <label for="name" class="block text-sm font-medium text-gray-700">Namn:</label>
+            <input type="text" id="name" class="mt-1 border-2 border-gray-400 p-2 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+            <label for="group" class="block text-sm font-medium text-gray-700">Grupp:</label>
+            <input type="text" id="group" class="mt-1 border-2 border-gray-400 p-2 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+            <label for="type" class="block text-sm font-medium text-gray-700">Typ:</label>
+            <input type="text" id="type" class="mt-1 border-2 border-gray-400 p-2 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+            <label for="age" class="block text-sm font-medium text-gray-700">Ålder:</label>
+            <input type="text" id="age" class="mt-1 border-2 border-gray-400 p-2 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Klicka</button>
+    </form>
+</body>
+</html>
