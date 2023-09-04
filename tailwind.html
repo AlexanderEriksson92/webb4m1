@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
 
 </head>
+
 <body>
-    <nav class="bg-blue-700 p-4">
+    <nav class="bg-blue-600 p-4">
         <ul class="flex justify-center">
             <li class="mx-4">
                 <a href="index.html" class="text-white hover:underline">Startsida</a>
@@ -21,8 +23,16 @@
             </li>
         </ul>
     </nav>
-    <h1>Tailwind</h1>
-    <p>Den här sidan använder Tailwind</p>
+    <div class="p-4 bg-gray-100 rounded-lg">
+        <h1 class="text-3xl font-bold mb-2">Tailwind</h1>
+        <p>Den här sidan använder Tailwind som till skillnad från Bootstrap använder mycket mer text för klasserna. Det
+            verkar dock som att
+            tanken är att kodaren har fler möjligheter att skräddarsy sidan med Tailwind. Nedan visas en tabell som är
+            stylead med hjälp av ett cheatsheet jag hittade online.
+        </p>
+        <a href="https://tailwindcss.com/" class="text-blue-500 underline">Länk till Tailwinds hemsida</a>
+    </div>
+
     <table class="bg-gray-300 min-w-full">
         <tr>
             <th class="py-2 px-4 border-b ">Djur</th>
@@ -69,17 +79,23 @@
     </table>
     <form action="" class="space-y-4 p-6 border rounded-lg shadow-lg">
         <legend class="text-2xl font-semibold mb-4">Lägg till djur</legend>
-            <label for="animal" class="block text-sm font-medium text-gray-700">Djur:</label>
-            <input type="text" id="animal" class="mt-1 border-2 border-gray-400 p-2 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
-            <label for="name" class="block text-sm font-medium text-gray-700">Namn:</label>
-            <input type="text" id="name" class="mt-1 border-2 border-gray-400 p-2 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
-            <label for="group" class="block text-sm font-medium text-gray-700">Grupp:</label>
-            <input type="text" id="group" class="mt-1 border-2 border-gray-400 p-2 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
-            <label for="type" class="block text-sm font-medium text-gray-700">Typ:</label>
-            <input type="text" id="type" class="mt-1 border-2 border-gray-400 p-2 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
-            <label for="age" class="block text-sm font-medium text-gray-700">Ålder:</label>
-            <input type="text" id="age" class="mt-1 border-2 border-gray-400 p-2 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
-            <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Klicka</button>
+        <label for="animal" class="block text-sm font-medium text-gray-700">Djur:</label>
+        <input type="text" id="animal"
+            class="mt-1 border-2 border-gray-400 p-2 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+        <label for="name" class="block text-sm font-medium text-gray-700">Namn:</label>
+        <input type="text" id="name"
+            class="mt-1 border-2 border-gray-400 p-2 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+        <label for="group" class="block text-sm font-medium text-gray-700">Grupp:</label>
+        <input type="text" id="group"
+            class="mt-1 border-2 border-gray-400 p-2 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+        <label for="type" class="block text-sm font-medium text-gray-700">Typ:</label>
+        <input type="text" id="type"
+            class="mt-1 border-2 border-gray-400 p-2 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+        <label for="age" class="block text-sm font-medium text-gray-700">Ålder:</label>
+        <input type="text" id="age"
+            class="mt-1 border-2 border-gray-400 p-2 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Klicka</button>
     </form>
 </body>
+
 </html>
